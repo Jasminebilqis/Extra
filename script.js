@@ -1,7 +1,3 @@
-
-
-
-
 //script tampilkan data testimoni
 const container = document.getElementById('daftarTestimoni');
     const testimoniList = JSON.parse(localStorage.getItem('testimoniList')) || [];
