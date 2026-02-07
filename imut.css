@@ -1,0 +1,298 @@
+:root {
+  --primary-pink: #FFB7D5;
+  --primary-yellow: #FFF9C4;
+  --accent-pink: #FF4D94;
+  --accent-yellow: #FFD600;
+  --text-dark: #5D4037;
+  --bg-image: url(https://i.pinimg.com/736x/06/84/0f/06840fe14f2de56534fbb0c4bc1024fc.jpg);
+}
+
+/* Reset & dasar */
+body {
+  background-image: var(--bg-image);
+  background-size: cover;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--accent-dark);
+  margin: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--text-dark);
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: var(--accent-dark);
+  font-size: 20px;
+  margin: 12px 0 8px;
+}
+
+p {
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: var(--text-dark);
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Navbar gemash */
+.main-nav, .navbar {
+  background-color: var(--primary-pink);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+  background-color: var(--primary-yellow);
+  color: var(--accent-pink);
+  border-radius: 8px;
+}
+
+/* Kartu produk & rating */
+.produk, .rating {
+  background-color: var(--accent-light);
+  border: 1px solid rgba(122,30,44,0.08);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.produk img, .grid-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Lanjut ke aturan grid */
+.daftar-produk { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 10px; 
+    padding: 20px; 
+    }
+
+.produk { 
+    background-color:#fff4dc; 
+    border: 5px solid #ffc8d5; 
+    padding: 59px;
+    border-radius: 5px;
+    text-align: center; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    }
+.produk img { 
+    width: 350px; 
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    }
+
+body {
+    background-image: url(https://i.pinimg.com/736x/06/84/0f/06840fe14f2de56534fbb0c4bc1024fc.jpg);
+    background-size: cover;
+font-family: poppins, Lato;
+color: #b73c7c;
+margin: 20px;}
+h1  {
+font-family: Georgia, 'Times New Roman', Times, serif, Lato;
+color: #ff93b7;
+font-size: 30px; 
+margin: 20px;}
+h2  {
+font-family: helvetica, Lato;
+color: #ff93b7;
+font-size: 20px; 
+margin: 20px;}
+p  {
+font-family: poppins, Lato;
+color: #ff93b7;
+font-size: 10 px; 
+margin: 20px;}
+
+.testimoni {
+            font-size: 100px; 
+            color: rgb(253, 246, 33);   
+        }
+.daftar-rating { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 10px; 
+    padding: 20px; 
+    } 
+.rating { 
+    background-color:#fff4dc; 
+    border: 5px solid #ffc8d5; 
+    padding: 59px;; 
+    border-radius: 5px; 
+    text-align: center; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    } 
+.grid-image { 
+    width: 350px; 
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    }
+
+.formulir {
+ max-width: 600px;
+ margin: auto;
+ padding: 20px;
+ background-color:#fff4dc; 
+    border: 5px solid #ffc8d5; 
+ border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+form label {
+ display: block;
+ margin-top: 10px;
+ font-weight: bold;
+ }
+form input,
+form select,
+form textarea {
+ width: 100%;
+ padding: 8px;
+ margin-top: 5px;
+ margin-bottom: 15px;
+ border-radius: 5px;
+ border: 1px solid #ccc;
+ }
+form button {
+ background-color: #3498db;
+ color: white;
+ padding: 10px 15px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+form button:hover {
+ background-color: #2980b9;
+ }
+
+/* Tipografi */
+h1, h2 {
+  color: var(--accent-pink);
+}
+p {
+  color: #9a3764;
+} 
+
+/* Styling Halaman Proses Testimoni */
+.konfirmasi {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  border: 4px dashed var(--primary-yellow);
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.konfirmasi h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--accent-pink);
+  
+  text-shadow: 2px 2px var(--primary-yellow);
+}
+
+.konfirmasi a {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--accent-pink);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-yellow);
+  padding-bottom: 5px;
+}
+
+.konfirmasi a:hover {
+  color: var(--accent-yellow);
+}
+
+/* counter gemash */
+.container {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap; /* Agar responsif di HP */
+
+    gap: 20px;
+
+    padding: 50px;
+
+    background-color: var(--primary-pink);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .stat-card {
+
+    background: white;
+
+    padding: 30px;
+    flex: 1;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    text-align: center;
+
+    min-width: 10px;
+
+  }
+
+  .counter {
+
+    display: block;
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    color: #e8e359;
+
+    margin-bottom: 5px;
+
+  }
+
+  .label {
+
+    color: #873158;
+
+    text-transform: uppercase;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+  }

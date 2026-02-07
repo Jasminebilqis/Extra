@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SILLY</title>
+<link rel="stylesheet" href="imut.css" />
+</head>
+<body>
+<nav class="main-nav navbar">
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Produk.html">Produk</a></li>
+    <li><a href="testimoni.html">Testimoni</a></li>
+    <li><a href="saran.html">Saran</a></li>
+    <li><a href="Tampilan Testimoni.html">Tampilan Testimoni</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="stat-card">
+    <span class="counter" data-target="1500">0</span>
+    <span class="label">Pengunjung Happy</span>
+  </div>
+  <div class="stat-card">
+    <span class="counter" data-target="2102">0</span>
+    <span class="label">Data Pengunjung</span>
+  </div>
+  <div class="stat-card">
+    <span class="counter" data-target="1230">0</span>
+    <span class="label">Varian Favorit</span>
+  </div>
+  <div class="stat-card">
+    <span class="counter" data-target="89">0</span>
+    <span class="label">Best Variant</span>
+  </div>
+  <div class="stat-card">
+    <span class="counter" data-target="990">0</span>
+    <span class="label">Rating Positif</span>
+  </div>
+</div>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const speed = 150;
+      const increment = target / speed;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+</script>
+<header class="hero">
+  <h1>SILLY</h1>
+  <h2>Soy Milk with Sticky Milk</h2>
+  <p>Stay SILLY — keep healthy. SILLY tersedia dalam varian: original, chocolate, matcha, dan tiramisu.</p>
+</header>
+
+<section class="pricing">
+  <h2>Harga</h2>
+  <ul>
+    <li>Original: 5.000</li>
+    <li>Chocolate: 6.000</li>
+    <li>Matcha: 6.000</li>
+    <li>Tiramisu: 6.000</li>
+  </ul>
+</section>
+
+<section class="benefits">
+  <h2>Manfaat</h2>
+  <ul>
+    <li>Sumber protein nabati</li>
+    <li>Mendukung kesehatan jantung</li>
+    <li>Gizi lengkap</li>
+    <li>Aman untuk intoleransi laktosa</li>
+    <li>Rendah lemak jenuh</li>
+  </ul>
+</section>
+
+<section class="origin">
+  <h2>Asal Usul</h2>
+  <p>Susu kedelai berasal dari Tiongkok dan telah dikonsumsi sejak ribuan tahun. Minuman ini dibuat dari kedelai yang dihaluskan, direbus, lalu disaring.</p>
+</section>
+
+<section class="contact">
+  <h2>Open Order</h2>
+  <p>Di SMAIT Al Uswah Surabaya</p>
+  <p>WA: 082142910950</p>
+</section>
+
+</body>
+</html>
